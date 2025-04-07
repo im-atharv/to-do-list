@@ -20,9 +20,8 @@ const TodoItem = ({ todo, index }) => {
 
   return (
     <div
-      className={`flex flex-col sm:flex-row justify-between items-center p-4 mb-2 rounded shadow transition-all ${
-        todo.completed ? "bg-green-100" : "bg-white"
-      }`}
+      className={`flex flex-col sm:flex-row justify-between items-center p-4 mb-2 rounded shadow transition-all ${todo.completed ? "bg-green-100" : "bg-white"
+        }`}
     >
       <div className="flex-1 w-full sm:w-auto">
         {isEditing ? (
@@ -35,9 +34,8 @@ const TodoItem = ({ todo, index }) => {
           />
         ) : (
           <span
-            className={`text-lg ${
-              todo.completed ? "line-through text-gray-400" : ""
-            }`}
+            className={`text-lg ${todo.completed ? "line-through text-gray-400" : ""
+              }`}
           >
             {todo.text}
           </span>
@@ -64,11 +62,10 @@ const TodoItem = ({ todo, index }) => {
           <>
             <button
               onClick={() => completeTodo(index)}
-              className={`cursor-pointer px-3 py-1 rounded text-white ${
-                todo.completed
-                  ? "bg-green-500 hover:bg-green-600"
-                  : "bg-yellow-400 hover:bg-yellow-500"
-              }`}
+              className={`cursor-pointer px-3 py-1 rounded text-white ${todo.completed
+                ? "bg-green-500 hover:bg-green-600"
+                : "bg-yellow-400 hover:bg-yellow-500"
+                }`}
             >
               {todo.completed ? "Undo" : "Complete"}
             </button>

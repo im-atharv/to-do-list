@@ -15,7 +15,7 @@ export const TodoProvider = ({ children }) => {
   }, [todos]);
 
   const addTodo = (text) => {
-    setTodos((prev) => [...prev, { text, completed: false }]);
+    setTodos((prev) => [{ text, completed: false }, ...prev]);
   };
 
   const completeTodo = (index) => {
