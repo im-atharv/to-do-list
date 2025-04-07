@@ -13,7 +13,7 @@ A simple and intuitive Todo app built with **Vite**. This app helps you manage y
 Clone the repository to your local machine:
 
 ```bash
-git clone [https://github.com/im-atharv/to-do-list.git]
+git clone https://github.com/im-atharv/to-do-list.git
 ```
 
 ## Prerequisites
